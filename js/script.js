@@ -15,7 +15,7 @@ function scrollController() {
     currentScrollTop = $(window).scrollTop();
     if(currentScrollTop > menuScrollTop && currentScrollTop<footerScrollTop-190){
         $('#menu2').addClass('fixed');    
-        $('#section1-inner').css('margin-top','95px');
+        $('#section1-inner').css('margin-top','85px');
     }else{ 
         $('#menu2').removeClass('fixed');
         $('#section1-inner').css('margin-top','0px');
