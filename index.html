@@ -11,29 +11,29 @@
     <head>
 
         <body>
-                <div class='page_cover'></div>
-                <div id='slid-menu'>
-                    <div class='close-btn' ></div>
-                    <ul class='menu-list Kanit'>
-                            <li>HOME</li>
-                        <li>ABOUT ME</li>
-                        <li>PROJECT</li>
-                    </ul>
-                    <div class='social-contact'>
-                        <div>
-                            <img src='./img/facebook.png' />
-                            <img src='./img/github.png' />
-                            <img src='./img/talk.png' />
-                            <img src='./img/naver.png' />
-                        </div>
-                        <div class='contact-btn'>CONTACT ME</div>
+            <div class='page_cover'></div>
+            <div id='slid-menu'>
+                <div class='close-btn'></div>
+                <ul class='menu-list Kanit'>
+                    <li>HOME</li>
+                    <li>ABOUT ME</li>
+                    <li>PROJECT</li>
+                </ul>
+                <div class='social-contact'>
+                    <div>
+                        <img src='./img/facebook.png' />
+                        <img src='./img/github.png' />
+                        <img src='./img/talk.png' />
+                        <img src='./img/naver.png' />
                     </div>
+                    <div class='contact-btn'>CONTACT ME</div>
                 </div>
+            </div>
             <header class='fullscreen'>
                 <div id='menu1'>
                     <div id='menu-container'>
-                        <div class='open-btn' >
-                            <img src='img/line-menu-red.png'/>
+                        <div class='open-btn'>
+                            <img src='img/line-menu-red.png' />
                         </div>
                     </div>
                 </div>
@@ -57,7 +57,9 @@
                         <i>NAYEONG</i>
                     </div>
                     <div class='in_bl wth_50 f_l'>
-                        <div class='open-btn'><img src='img/line-menu-red.png'/></div>
+                        <div class='open-btn'>
+                            <img src='img/line-menu-red.png' />
+                        </div>
                     </div>
                 </div>
             </div>
@@ -65,7 +67,13 @@
                 <section id='section1'>
                     <div id='section1-inner'>
                         <article id='aboutme'>
-                                <div id='about1'><p class='Paytone about1-title'>ABOUT<br/>ME</p><div><p class='about1-border'>&nbsp;</p></div></div>
+                            <div id='about1'>
+                                <p class='Paytone about1-title'>ABOUT
+                                    <br/>ME</p>
+                                <div>
+                                    <p class='about1-border'>&nbsp;</p>
+                                </div>
+                            </div>
                             <div id='about2'>
                                 <p class='about2-txt'>저는 웹 프로그래밍에 관심이 있는 학생입니다.
                                     <br /> 처음 html을 접하고 만들었던 홈페이지를 php를 이용하여 다양한 기능을 추가했을 때의 즐거움은 더 다양하고 더 나은 기능을 제공하고 싶다는 욕심을
@@ -234,7 +242,11 @@
                                     </figcaption>
                                 </div>
                             </figure>
-                            <div><a href=''><p class='more-btn'>VIEW MORE</p></a></div>
+                            <div>
+                                <a href=''>
+                                    <p class='more-btn'>VIEW MORE</p>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </section>
@@ -253,16 +265,48 @@
                 </script>
             </div>
             <script>
-                    
-                    $(".open-btn").click(function() {
-                      $("#slid-menu,.page_cover").addClass("open");
+
+                    $(".open-btn").click(function () {
+                        $("#slid-menu,.page_cover,html").addClass("open");
                     });
-                    $(".close-btn").click(function() {
-                        $("#slid-menu,.page_cover").removeClass("open");
+                    $(".close-btn").click(function () {
+                        $("#slid-menu,.page_cover,html").removeClass("open");
                     });
             </script>
 
-            <footer class='fullscreen'></footer>
-        </body>
+            <footer class='fullscreen'>
+                <div class='over_h foot1'>
+                <div id='contact-title'>
+                    <p class='Paytone'>CONTECT ME</p>
+                    <p>If you wish to contact me, send me a message.</p>
+                </div>
+                <div id='contact1'>
+                    <ul>
+                        <li>
+                            <img src='./img/location-white.png' align='left' />서울시 노원구 화랑로 621,
+                            <br />서울여자대학교 샬롬하우스 B동 733호</li>
+                        <li>
+                            <img src='./img/mail-white.png' />nayeong_e@naver.com</li>
+                        <li>
+                            <img src='./img/talk-white.png' />opencacaotalk</li>
+                    </ul>
+                </div>
+                <div id='contact2'>
+                    <div class='message-form'>
+                        <form action="#" accept-charset="utf-8" name="message" method="post" id='message'>
+                            <input type="text" name="usrname" value='YOUR NAME' />
+                            <input type="email" name="usrmail" value='EMAIL ADDRESS' />
+                            <textarea rows="4" cols="50" name="comment" style="resize: none;"></textarea>
+                        </form>
+                        <br />
+                        <div id='submit-btn'>SEND MESSAGE</div>
+                    </div>
+                </div>
+                </div>
+                <div class='foot2'>
+                        <img src='./img/github-white.png' /><img src='./img/facebook-white.png' /><img src='./img/instagram-white.png' />
+                    <p>Please feel free to contact me if you need any further information.<br />Thank you for coming to my Website! :)</p></div>
+                </footer>
+                </body>
 
 </html>

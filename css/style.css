@@ -18,11 +18,11 @@
 .menu-list{width:100%;margin-top:150px;font-size:17px;font-weight: 600;}
 .menu-list li{height:50px;}
 .menu-list li:hover{color:#ef0000;}
-.social-contact{position: fixed;width: 300px;bottom:80px;}
+.social-contact{position: fixed;width: 300px;bottom:80px;-webkit-transform: translateZ(0);}
 .social-contact img{width:18px;margin: 0 10px;}
 .contact-btn{display:inline-block;margin-top: 30px;padding:13px 20px;background-color: #000000;color:#ffffff;font-size:13px;font-weight: 600;border-radius: 3px;}
 .contact-btn:hover{background-color: #ef0000}
-
+html.open{overflow: hidden;}
 
 /***************header***************/
 #title{text-align: center;}
@@ -58,7 +58,7 @@
 #about2{display:inline-block;overflow:hidden;float:left;}
 .about2-txt{margin-top: 10px;font-size: 13px;line-height: 1.5em;font-weight: 600;}
 #subabout{overflow:hidden;margin:20px 0 0;}
-.subtitle{margin:15px 0 5px;font-size:20px;font-weight: 700;color:#e40000;font-family: 'Kanit', sans-serif;}
+.subtitle{margin:15px 0 5px;font-size:20px;font-weight: 700;color:#e40000;font-family: 'Roboto', sans-serif;}
 .ex-txt{padding-left: 5px;font-size: 13px;font-weight: 600;line-height: 1.6em;}
 #skills{overflow:hidden;padding-left: 5px;}
 .skill {display: inline-block;width: 40px; margin:6px 3px 0 0;padding: 13px 0;text-align: center;background-color: #28282e;color: #F6F0F0;font-weight: 600;font-size: 11px;}
@@ -144,9 +144,9 @@
   -webkit-transition: all 0.35s ease;
   transition: all 0.35s ease;
 }
-.project-list{position: relative;font-family: 'Kanit', sans-serif;text-align:left;;}
+.project-list{position: relative;font-family: 'Roboto', sans-serif;text-align:left;;}
 .wrap-project.hover{position: absolute;height: 260px;/*310px;*/width: 100%;top: -30px;background-color: #f2f2f2;/*#ffffff;*/}
-.inner-project{position: relative;overflow: hidden;height:200px;/*250px;*/margin: 30px 15%;font-family: 'Kanit', sans-serif;text-align:left;}
+.inner-project{position: relative;overflow: hidden;height:200px;/*250px;*/margin: 30px 15%;font-family: 'Roboto', sans-serif;text-align:left;}
 .wrap-img{display:inline-block;overflow:hidden;width: 35%;}
 .project-list img {width: 100%;height:200px;/*250px;*/border: 1px solid #f2f2f2}
 .scale {
@@ -167,7 +167,26 @@
 .project-list figcaption {overflow:hidden;display:inline-block;width: 64%;height:200px;/*250px;*/padding:0 0 0 45px;}
 .project-list .proj-title{margin-top:0px;font-size: 35px;font-weight: 600;}
 .proj-title.hover{font-size: 42px;/*color: #e40000;*/}
-.project-list p:nth-child(2){font-size: 16px;line-height: 0.3em;padding-bottom:35px;color: #6c6a6a;}
+.project-list p:nth-child(2){font-size: 16px;font-weight: 500;line-height: 1.3em;padding-bottom:30px;color: #6c6a6a;}
 .project-list p:nth-child(3){margin-bottom: 10px ;font-family: 'Nanum Gothic', sans-serif;font-size: 13px;font-weight: 600; overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
-.used-skill{overflow:hidden;display: inline-block;float:left;background-color:#ddd;margin: 4px 4px 0 0;padding:3px 13px;border-radius: 5px;font-size: 12.5px;}
-.more-btn{display: inline-block;width:150px;margin-top:50px;padding:20px 25px;background-color: #e40000;color:#ffffff;font-family: 'Kanit', sans-serif;font-size: 15px;font-weight: 600;}
+.used-skill{overflow:hidden;display: inline-block;float:left;background-color:#ddd;margin: 4px 4px 0 0;padding:6px 13px;border-radius: 5px;font-size: 12.5px;font-weight: 500;}
+.more-btn{display: inline-block;width:150px;margin-top:50px;padding:20px 25px;background-color: #e40000;color:#ffffff;font-family: 'Roboto', sans-serif;font-size: 15px;font-weight: 600;}
+
+/***************footer***************/
+footer{padding:0 15%;}
+.foot1{height:85%;}
+#contact-title{font-family: 'Roboto', sans-serif;}
+#contact-title p:nth-child(1){margin-top: 50px;font-size:65px;color:#ef0000;}
+#contact-title p:nth-child(2){padding-left: 9px;font-size:19px;}
+#contact1, #contact2 {display:inline-block;overflow:hidden;float:left;width:50%;margin-top:100px;}
+
+#contact1 li{height:75px;}
+#contact1 img{width:25px;vertical-align: middle;margin-right: 30px;}
+#contact2 {text-align:right;}
+#message{width: 350px;}
+#message input{width: 320px;height: 27px;margin-bottom: 10px;padding-left: 15px;}
+#message textarea{width: 333px;height:115px;}
+#submit-btn{display:inline-block;padding:15px 30px;background-color: #ef0000;font-family: 'Roboto', sans-serif;}
+.message-form{display:inline-block;text-align: left;}
+.foot2{height:15%;font-family: 'Roboto', sans-serif;text-align: center;}
+.foot2 img{width:17px;margin: 17px 15px;}

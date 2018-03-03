@@ -46,8 +46,8 @@ table {
 /**************/
 /*.Nanum Gothic{font-family: 'Nanum Gothic', sans-serif;}*/
 .Paytone{font-family: 'Paytone One', sans-serif;}
-.Kanit{font-family: 'Kanit', sans-serif;}
-
+.Kanit{font-family: 'Kanit''Roboto', sans-serif;}
+.Roboto{font-family: 'Roboto', sans-serif;}
 .tx_l{text-align:left;}
 .tx_c{text-align:center;}
 .unvisi{display:none;}
