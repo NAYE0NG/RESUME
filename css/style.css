@@ -18,7 +18,7 @@
 .menu-list{width:100%;margin-top:150px;font-size:17px;font-weight: 600;}
 .menu-list li{height:50px;}
 .menu-list li:hover{color:#ef0000;}
-.social-contact{/*position: fixed;*/width: 300px;bottom:80px;}
+.social-contact{position: fixed;width: 300px;bottom:80px;}
 .social-contact img{width:18px;margin: 0 10px;}
 .contact-btn{display:inline-block;margin-top: 30px;padding:13px 20px;background-color: #000000;color:#ffffff;font-size:13px;font-weight: 600;border-radius: 3px;}
 .contact-btn:hover{background-color: #ef0000}
