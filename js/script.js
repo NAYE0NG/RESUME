@@ -1,7 +1,7 @@
-var currentScrollTop = 0, footerScrollTop=0 , menuScrollTop = 0;
+var currentScrollTop = 0, footerScrollTop=0 , menuScrollTop = 90;
 
 window.onload = function() {
-    menuScrollTop =$('#menu2').offset().top;
+    
     footerScrollTop = $('footer').offset().top;
     //새로고침
     scrollController();
@@ -13,11 +13,9 @@ window.onload = function() {
 
 function scrollController() {
     currentScrollTop = $(window).scrollTop();
-    if(currentScrollTop > menuScrollTop && currentScrollTop<footerScrollTop-190){
-        $('#menu2').addClass('fixed');    
-        $('#section1-inner').css('margin-top','85px');
+    if(currentScrollTop > menuScrollTop){
+        $('nav, #wrap-menu').addClass('mv-scroll');
     }else{ 
-        $('#menu2').removeClass('fixed');
-        $('#section1-inner').css('margin-top','0px');
+        $('nav, #wrap-menu').removeClass('mv-scroll');
     }
 }

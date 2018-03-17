@@ -1,252 +1,116 @@
-.fullscreen{height:100%;overflow:hidden;background-color: #00101F;color:#ffffff;}
+nav{position:fixed;top:0;z-index:99;width: 100%;font-size:14px; transition:  all 2s;-webkit-transition: all 2s;-o-transition: all 2s;-moz-transition: all 2s;}
+nav.mv-scroll{background-color:#ffffff;box-shadow: 0 0 10px rgba(0,0,0,0.1);transition:  all 2s;-webkit-transition: all 2s;-o-transition: all 2s;-moz-transition: all 2s}
+#wrap-menu {height:90px;margin:auto 10%;color:#ffffff;font-weight: 900;text-align: right;letter-spacing: 1px;}
+#wrap-menu p{display:inline-block;margin:40px 0 0 3%;}
+#wrap-menu.mv-scroll{height:70px;color:#333;}
+#wrap-menu.mv-scroll p{margin:30px 0 0 3%;}
+.fullscreen{height:100%;overflow:hidden;background: url("../img/background.JPG") no-repeat center;background-size: 100% auto;color:#ffffff;background-size:cover;}
+#slider-area {width: 100%;height: 100%;position: fixed;}
+#whoami{ width: 100%;position: absolute;top: 40%;color:#ffffff;}
+#overflow-area{ width: 100%;position: absolute;top: 100%;}
+.blackcover{width:100%;height:100%;background-color: rgba(0, 0, 0, 0.4);}
+#whoami-inner{margin:0 15%;font-family: 'Permanent Marker', cursive;}
+#whoami p:nth-child(1){font-size: 55px;}
+#whoami p:nth-child(2){font-size: 25px;line-height: 0.6em;}
+.social-contact img{width:20px;margin: 45px 15px 0 0;}
 .full-outer {display: table;height: 80% !important;left: 0;min-height: 80%;position: absolute;right: 0;table-layout: fixed;top: 10%;width: 100%; z-index: 2;}
 .full-inner{display: table-cell; text-align: center;vertical-align: middle;width: 100%;}
+section {width:70%;padding:10% 15%;overflow: hidden;}
+/***************section1***************/
+#section1{background-color: #ffffff;}
+#section1 div{display:inline-block;overflow:hidden;float:left;}
+#profile-images {width:35%;}
+#profile-images img{width:45%;}
+#introduce-txt{width:65%;font-size:16px;line-height: 1.7em;}
+#experience{width:65%;margin-top:55px;}
+.top-border{width:50px;margin: 20px 0 35px;border-top:#28282e solid 2px;}
+.subtitle {font-size:18px;font-weight:700;margin-bottom: 12px;}
+.subtxt{font-size:14.5px;line-height: 1.5em;}
+.exp-result{font-size:13px;}
+#skills{margin-top: 50px;}
+#skills img{height: 45px;margin: 15px 20px 0 0;}
 
-/***************menu1, menu2***************/
-#menu1{height: 85px;color:#e40000;}
-#menu2 {height: 85px;background-color: #ffffff;color:#e40000;;z-index: 98;border-bottom: #f2f2f2 1px solid;}
-#menu2.fixed {position: fixed;top:0;left:0;width:100%;}
-#menu2 #menu-container, #menu1 #menu-container{margin: 0 45px; padding: 23px 0;font-size: 27px;}
-#menu2 img, #menu1 img{width:20px;margin-top: 5px;}
-.open-btn{overflow: hidden;display: inline-block;float: right;cursor: pointer;}
-.page_cover {position: fixed;width: 100%;height: 100%; top: 0px;left: 0px;background-color: rgba(0, 0, 0, 0.4);z-index: 100;display: none;}
-.page_cover.open {display: block;}
-#slid-menu {position: fixed;width: 300px;height: 100%;top: 0px;/*right:0px;*/right: -302px;z-index: 111;border: 1px solid #c9c9c9;background-color: white;text-align: center;transition: All 0.2s ease;-webkit-transition: All 0.2s ease;-moz-transition: All 0.2s ease;-o-transition: All 0.2s ease;}
-#slid-menu.open {right: 0px;}
-.close-btn {position: absolute;width: 15px;height: 15px;margin: 35px 45px;right: 0px;top: 0px;background-image: url("../img/cancel-black.png");background-size: 100%;background-repeat: no-repeat;background-position: center;cursor: pointer;}
-.close-btn:hover{background-image: url("../img/cancel-red.png");}
-.menu-list{width:100%;margin-top:150px;font-size:17px;font-weight: 600;}
-.menu-list li{height:50px;}
-.menu-list li:hover{color:#ef0000;}
-.social-contact{position: fixed;width: 300px;bottom:80px;}
-.social-contact img{width:18px;margin: 0 10px;}
-.contact-btn{display:inline-block;margin-top: 30px;padding:13px 20px;background-color: #000000;color:#ffffff;font-size:13px;font-weight: 600;border-radius: 3px;}
-.contact-btn:hover{background-color: #ef0000}
-html.open{overflow: hidden;}
+/***************section2***************/
+#section2{background-color: #f2f2f2;}
+.title{font-size: 35px;margin-bottom: 15px;font-family: 'Permanent Marker', cursive;}
+.border-orange {width:10%;border-bottom:2px solid #F58A00;}
+.border-grey{width:89%;margin-left:1%;border-bottom:2px solid grey;}
+.project-wrapper {width: 100%;margin: 65px 0 0;}
+.viewport {width: 100%;height: 450px;overflow: hidden;}
+.project-slider {list-style: none;width: 1000%;position: relative;}
+.project-slider li {width: 2.95%;height: 450px;float: left;margin: 0 0.2%;background-color: #ffffff;}
+.controller {list-style: none;}
+.controller li {float: left;margin: 35px 0 0 5px;width: 20px;height: 20px;cursor: pointer;background-color: #F58A00;text-align:center;}
+.controller li img{width: 10px;margin-top: 5px}
+.moreBtn{margin-right: 8px !important;}
 
-/***************header***************/
-#title{text-align: center;}
-#title-txt{line-height: 2.8em;}
-#title-txt p:nth-child(1){font-size: 13vmin;}
-#title-txt p:nth-child(2){font-size: 5.5vmin;}
-#profile{overflow:hidden;padding-top:30px;text-align: center;}
-#nayeong{width:75%;border-radius:50%;-webkit-filter: grayscale(100%);filter: gray;}
+/*
+@media screen and (min-width:400px) {
 
-@media screen and (min-width:720px){ /*web, iPad*/
-    #nayeong{width:300px;}
-    #title-txt{line-height: 5.5em;}
-}
-@media screen and (min-width:968px)and (max-width:1280px){ /*iPad Pro*/
-    #title-txt{line-height: 7em;}
+    .project-slider li {
+    width: 9.8%;}
 }
 
-/***************about***************/
-#section1{background-color: #F6F0F0;}
-#section1-inner{overflow:hidden;width:100%;}
-#aboutme{overflow:hidden;padding:100px 5% 100px;}
-/*border, padding의 너비가 전체 크기를 차지하지 못하게 함*/
-#aboutme * { 
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  -webkit-transition: all 0.35s ease;
-  transition: all 0.35s ease;
-}
-#about1{overflow:hidden;}
-#about2{overflow:hidden;}
-#about1 * {display:inline-block;overflow:hidden;float:left;}
-.about1-title {margin-bottom:30px;text-align:left;font-size: 50px;line-height: 45px;color:#e40000;}
-#about2{display:inline-block;overflow:hidden;float:left;}
-.about2-txt{margin-top: 10px;font-size: 13px;line-height: 1.5em;font-weight: 600;}
-#subabout{overflow:hidden;margin:20px 0 0;}
-.subtitle{margin:15px 0 5px;font-size:20px;font-weight: 700;color:#e40000;font-family: 'Roboto', sans-serif;}
-.ex-txt{padding-left: 5px;font-size: 13px;font-weight: 600;line-height: 1.6em;}
-#skills{overflow:hidden;padding-left: 5px;}
-.skill {display: inline-block;width: 40px; margin:6px 3px 0 0;padding: 13px 0;text-align: center;background-color: #28282e;color: #F6F0F0;font-weight: 600;font-size: 11px;}
+@media screen and (min-width:720px) {
 
-@media screen and (min-width:790px){ /*web iPad Pro*/
-  #aboutme{padding:100px 10% 90px;}
-  #about1{display:inline-block;float:left;width:40%;}
-  #about2{display:inline-block;float:left;width:60%;}
-  .about1-title {text-align:right;font-size: 70px;line-height: 65px;}
-  #about1 div {padding:9px 14px 14px;}
-  .about1-border {border-right:10px solid #e40000;height: 120px;}
-  .about2-txt{font-size: 15px;line-height: 1.75em;}
-  .subtitle{margin-top:25px;}
-  .ex-txt{font-size: 14px;line-height: 2em;}
-  .skill {width: 55px; margin:10px 5px 0 0;font-size: 13px;padding: 17px 0;}
-
+    .project-slider li {
+    width: 3.1%;}
 }
 
-/***************project***************/
-#section2-inner{overflow:hidden;width:100%;background-color: #ffffff;/*#f2f2f2;*/}
-#title2{height:300px;text-align:center;}
-#title2 p:nth-child(1){margin-top: 100px;font-size: 70px;line-height: 65px;}
-#title2 span{border-bottom: #000000 solid 5px;}
-#project{overflow: hidden;text-align:center;margin:0 0 150px;}
-/*해당 엘리먼트의 패딩과 테두리가 더이상 넓이를 늘리지 않음*/
-.project-list * { 
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  -webkit-transition: all 0.35s ease;
-  transition: all 0.35s ease;
+@media screen and (min-width:790px) {
+
+    .project-slider li {
+    width: 2.3%;}
 }
-.project-list{position: relative;font-family: 'Roboto', sans-serif;text-align:left;;}
-.wrap-project.hover{position: absolute;height: 260px;/*310px;*/width: 100%;top: -30px;background-color: #f2f2f2;/*#ffffff;*/}
-.inner-project{position: relative;overflow: hidden;height:200px;/*250px;*/margin: 30px 15%;font-family: 'Roboto', sans-serif;text-align:left;}
-.wrap-img{display:inline-block;overflow:hidden;width: 35%;}
-.project-list img {width: 100%;height:200px;/*250px;*/border: 1px solid #f2f2f2}
-.scale {
-  transform: scale(1);
-  -webkit-transform: scale(1);
-  -moz-transform: scale(1);
-  -ms-transform: scale(1);
-  -o-transform: scale(1);
-  transition: all 0.3s ease-in-out;
-}
-.scale.hover {
-  transform: scale(1.2);
-  -webkit-transform: scale(1.2);
-  -moz-transform: scale(1.2);
-  -ms-transform: scale(1.2);
-  -o-transform: scale(1.2);
-}
-.project-list figcaption {overflow:hidden;display:inline-block;width: 64%;height:200px;/*250px;*/padding:0 0 0 45px;}
-.project-list .proj-title{margin-top:0px;font-size: 35px;font-weight: 600;}
-.proj-title.hover{font-size: 42px;/*color: #e40000;*/}
-.project-list p:nth-child(2){font-size: 16px;font-weight: 500;line-height: 1.3em;padding-bottom:30px;color: #6c6a6a;}
-.project-list p:nth-child(3){margin-bottom: 10px ;font-family: 'Nanum Gothic', sans-serif;font-size: 13px;font-weight: 600; overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
-.used-skill{overflow:hidden;display: inline-block;float:left;background-color:#ddd;margin: 4px 4px 0 0;padding:6px 13px;border-radius: 5px;font-size: 12.5px;font-weight: 500;}
-.more-btn{display: inline-block;width:150px;margin-top:50px;padding:20px 25px;background-color: #e40000;color:#ffffff;font-family: 'Roboto', sans-serif;font-size: 15px;font-weight: 600;}
+*/
 
-/***************footer***************/
-footer{padding:0 5%;}
-.foot1{height:85%;}
-#contact-title{font-family: 'Roboto', sans-serif;text-align:center;}
-#contact-title p:nth-child(1){margin-top: 30px;font-size:42px;color:#ef0000;}
-#contact-title p:nth-child(2){padding-left: 3px;font-size: 12px;}
-#contact1{margin-top:15%;}
-#contact1 li{height:55px;font-size: 13px;}
-#contact1 img{width:25px;vertical-align: middle;margin-right: 30px;}
-#contact2 {text-align:right;}
-
-#message input{width: 100%;height: 25px;margin-bottom: 7px;padding-left: 15px;font-size:12px;}
-#message textarea{width: 100%;height:80px;}
-#submit-btn{display:inline-block;padding:10px 25px;background-color: #ef0000;font-family: 'Roboto', sans-serif;font-size: 13px;margin-top: 10px;}
-
-.message-form{display:inline-block;text-align: center;}
-.foot2{height:15%;font-size: 12px;font-family: 'Roboto', sans-serif;text-align: center;}
-.foot2 img{width:15px;margin: 3% 15px;}
-
-
+.project-list{overflow:hidden;}
+.projectImg{background-size:cover; background-repeat:no-repeat; width:100%;height:230px;}
+#img1.projectImg{background-image: url('../img/publiday.JPG');}
+#img2.projectImg{background-image: url('../img/weatherinfo.JPG');}
+#img3.projectImg{background-image: url('../img/weatherinfo.JPG');}
+#img4.projectImg{background-image: url('../img/madelist.png');}
+#img5.projectImg{background-image: url('../img/madelist.png');}
+.wrap-project-txt{margin-top:10px;}
+.proj-title{padding:15px 0;border-bottom:1px solid #ddd; text-align: center;}
+.proj-title span{font-size: 13px;}
+.proj-con{padding:15px;font-size: 14px;}
+.used-skill{overflow:hidden;display: inline-block;float:left;background-color:#ddd;margin: 4px 2px 0 0;padding:3px 10px;border-radius: 5px;font-size: 11px;}
+/***************contect***************/
+#section3{background-color: #ffffff;}
+#wrap-contact{margin-top: 65px;}
+#wrap-contact article:nth-child(1){margin-right:10%;}
+#wrap-contact article:nth-child(2){margin-left:10%;}
+#contact1 {margin-top:15%;font-size: 15.5px;}
+#contact1 li{height:55px;font-size: 15px;}
+#contact1 img{width:20px;vertical-align: middle;margin-right: 30px;}
+.message-form{width:80%;float:right;text-align: left;}
+/*boder, padding이 넓이를 차지하지 못하도록*/
 .message-form * { 
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  -webkit-transition: all 0.35s ease;
-  transition: all 0.35s ease;
-}
-
-@media screen and (min-width:400px){/*Nexus 6P, Nexus 5X*/
-
-}
-@media screen and (min-width:720px){ /*iPad*/
-
-  #contact-title{text-align: left;}
-  #contact-title p:nth-child(1){margin-top: 50px;font-size:65px;}
-  #contact-title p:nth-child(2){padding-left: 9px;font-size:19px;}
-  #contact1, #contact2 {display:inline-block;overflow:hidden;float:left;width:50%;margin-top:100px;}
-  #contact1 li{height:75px;font-size: 16px;}
-  #message{width: 350px;}
-  #message input{height: 35px;margin-bottom: 10px;}
-  #message textarea{height:115px;}
-  #submit-btn{padding:15px 30px;margin-top: 20px;}
-  .message-form{text-align: left;}
-  #message input, #submit-btn, .foot2{font-size: 16px;}
-  .foot2 img{width:17px;margin: 17px 15px;}
-
-}
-@media screen and (min-width:790px){ /*web iPad Pro*/
-  footer{padding:0 15%;}
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-#projects{overflow:hidden;padding:0 10%;text-align:center;font-family: 'Kanit', sans-serif;color: #28282e;}
-.project{overflow:hidden;height:320px;display:inline-block;width:30%;text-align: left;margin-top:20px;}
-.project article{overflow:hidden;margin:0 3%;padding: 2% 0;}
-.project img{width:100%;height:150px;padding:0;}
-.scale {
-    transform: scale(1);
-    -webkit-transform: scale(1);
-    -moz-transform: scale(1);
-    -ms-transform: scale(1);
-    -o-transform: scale(1);
-    transition: all 0.3s ease-in-out;
-  }
-  .scale:hover {
-    transform: scale(1.2);
-    -webkit-transform: scale(1.2);
-    -moz-transform: scale(1.2);
-    -ms-transform: scale(1.2);
-    -o-transform: scale(1.2);
-  }
-.project p:nth-child(1){font-size: 20px;font-weight: 600;}
-.project p:nth-child(2){font-size: 15px;line-height: 0.3em;padding-bottom:10px;color: #6c6a6a;}
-.project p:nth-child(3){margin-bottom: 10px ;font-family: 'Nanum Gothic', sans-serif;font-size: 13px;font-weight: 600; overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
-*/
-/*
-#project{overflow: hidden;text-align:center;margin:0 10% 150px;}
-.project-list{position: relative;overflow: hidden;display:inline-block;width: 30%;height:270px;margin: 10px 1% 45px;font-family: 'Kanit', sans-serif;color: #28282e;text-align: left;}
-*/
-/*해당 엘리먼트의 패딩과 테두리가 더이상 넓이를 늘리지 않음*/
-/*
-.project-list * { 
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     -webkit-transition: all 0.35s ease;
     transition: all 0.35s ease;
   }
-.project-list img {width: 100%;height:205px;}
-.project-list .proj-title{font-size: 20px;font-weight: 600;}
-.project-list p:nth-child(2){font-size: 15px;line-height: 0.3em;padding-bottom:10px;color: #6c6a6a;}
-.project-list p:nth-child(3){margin-bottom: 10px ;font-family: 'Nanum Gothic', sans-serif;font-size: 13px;font-weight: 600; overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
-.project-list figcaption {position: absolute;top: calc(77%);width: 100%;background-color: #ffffff;padding: 15px 25px 65px;}
-.project-list:hover figcaption{top: 80px;border:1px solid #ddd;}
-.used-skill{overflow:hidden;display: inline-block;float:left;background-color:#ddd;margin: 4px 4px 0 0;padding:3px 13px;border-radius: 5px;font-size: 12.5px;}
-*/
+.message-form input {width:100%;height:35px;margin-bottom:10px;padding:0 5px;}
+.message-form textarea {width:100%;height:150px;margin-bottom:15px;padding:0 5px;}
+#submit-btn{width:60%;padding:15px 0 13px;background-color: #F58A00;color:#ffffff;text-align: center;}
 
-/*새로 작성*/
-/*.wrap-project{position: absolute;background-color: #ffffff;}
-.project-list{position: relative;overflow: hidden;height:250px;padding:0 30px 30px;font-family: 'Kanit', sans-serif;text-align:left;}
-*/
+/*********************
+    PROJECT PAGES
+**********************/
+#wrap-topinfo{margin-top:5%;border-top:1.5px solid #ddd;border-bottom:1.5px solid #ddd;}
+#proj-route{overflow: hidden;padding:8px 15px;font-size:13px;}
+#proj-summary{padding:25px 15px;border-top:3px solid #959595;font-size:14px;}
+#proj-summary p:nth-child(1){font-size:20px;font-weight: 600;}
+#proj-summary table{margin:25px 0 0}
+#proj-summary table tr{height: 25px;}
+#proj-summary table td:nth-child(1){width:15%;color:#959595;}
+#wrap-allinfo {margin: 30px 10px;}
 
+#wrap-allinfo div{margin-bottom:50px;}
+#wrap-allinfo div p:nth-child(1){margin: 5px;line-height: 1.5em;}
+#wrap-allinfo div p:nth-child(2){margin: 10px;line-height: 1.5em;}
+#wrap-allinfo ul li{margin-left: 10px;line-height: 1.8em;}
+#proj-images img{height:400px;margin: 10px;}
 

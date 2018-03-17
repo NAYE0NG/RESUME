@@ -27,8 +27,7 @@ footer, header, hgroup, menu, nav, section, main {
 }
 
 html, body {
-	font-family: 'Jeju Gothic', sans-serif;
-	color:#333;
+	font-family: 'Nanum Gothic', sans-serif;
     height: 100%;}
 
 ol, ul {
@@ -48,19 +47,10 @@ table {
 }
 
 /**************/
-.jejugothic{font-family: 'Jeju Gothic', sans-serif;}
-.permanent-marker{font-family: 'Permanent Marker', cursive;}
-
-.grayscale {
-	filter:url(grayscale.svg); /* Firefox 4+*/ 
-	filter:gray;/*IE 6-9*/
-	-webkit-filter:grayscale(100%);	
-	-moz-filter:grayscale(100%);	
-	-ms-filter:grayscale(100%);	
-	-o-filter:grayscale(100%);	
-	filter:grayscale(100%);	
-  }
-
+/*.Nanum Gothic{font-family: 'Nanum Gothic', sans-serif;}*/
+.Paytone{font-family: 'Paytone One', sans-serif;}
+.Kanit{font-family: 'Kanit''Roboto', sans-serif;}
+.Roboto{font-family: 'Roboto', sans-serif;}
 .tx_l{text-align:left;}
 .tx_c{text-align:center;}
 .unvisi{display:none;}
