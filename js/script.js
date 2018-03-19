@@ -19,3 +19,8 @@ function scrollController() {
         $('nav, #wrap-menu').removeClass('mv-scroll');
     }
 }
+
+function showThis(target){
+    var strTarget = target+'.php';
+    location.href='./project/'+strTarget;
+}

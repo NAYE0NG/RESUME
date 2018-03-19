@@ -13,10 +13,11 @@
 <body>
     <nav>
         <div id='wrap-menu'>
-            <p>HOME</p>
-            <p>ABOUT</p>
-            <p>PROJECT</p>
-            <p>CONTACT</p>
+            <!--p>HOME / about까지 내려오고나서 맨앞쪽으로 이미지 동그랗게? 아님 내이름 넣어 그게 홈임</p-->
+            <a href='#about'><p>ABOUT</p></a>
+            <a href='#project'><p>PROJECT</p></a>
+            <a href='./project/projectlist.php'><p>ALL</p></a>
+            <a href='#contact'><p>CONTACT</p></a>
         </div>
     </nav>
     <header id='slider-area' class='fullscreen'>
@@ -36,6 +37,7 @@
         </div>
     </div>
     <div id='overflow-area'>
+        <a id='about'></a>
         <section id='section1'>
             <div id='profile-images'>
                 <img src='./img/me4.jpg' />
@@ -77,12 +79,13 @@
             </div>
 
         </section>
+        <a id='project'></a>
         <section id='section2'>
             <div class='wrap-title'>
                 <p class='title in_bl f_l'>PROJECT</p>
                 <ul class="controller in_bl f_r">
 
-                    <li class="moreBtn">
+                    <li class="moreBtn" value='projectlist'>
                         <img src='./img/add-btn.png' />
                     </li>
                     <li class="prevBtn">
@@ -100,8 +103,11 @@
                     <div class="viewport">
                         <ul class="project-slider">
                             <li value='1'>
-                                <figure class='project-list'>
-                                    <div id='img1' class='projectImg'></div>
+                                <figure class='project-list' value='publiday'>
+                                    <div class='wrap-projectImg'>
+                                        <div id='img1' class='projectImg scale'></div>
+                                        <div class='blackcover2'></div>
+                                    </div>
                                     <figcaption class='wrap-project-txt'>
                                         <p class='proj-title'>퍼블리데이 웹 / 서버
                                             <br />
@@ -126,10 +132,13 @@
                                 </figure>
                             </li>
                             <li value='2'>
-                                <figure class='project-list'>
-                                    <div id='img2' class='projectImg'></div>
+                                <figure class='project-list' value='weather'>
+                                    <div class='wrap-projectImg'>
+                                        <div id='img2' class='projectImg scale'></div>
+                                        <div class='blackcover2'></div>
+                                    </div>
                                     <figcaption class='wrap-project-txt'>
-                                        <p class='proj-title'>WEATHER INFORMATION
+                                        <p class='proj-title'>내 위치 실시간 날씨 알림
                                             <br />
                                             <span>Chrome Extension App</span>
                                         </p>
@@ -149,10 +158,13 @@
                                 </figure>
                             </li>
                             <li value='3'>
-                                <figure class='project-list'>
-                                    <div id='img3' class='projectImg'></div>
+                                <figure class='project-list' value='cafealarm'>
+                                    <div class='wrap-projectImg'>
+                                        <div id='img3' class='projectImg scale'></div>
+                                        <div class='blackcover2'></div>
+                                    </div>
                                     <figcaption class='wrap-project-txt'>
-                                        <p class='proj-title'>NAVER CAFE ALARM
+                                        <p class='proj-title'>네이버 카페 새소식 알람
                                             <br />
                                             <span>Chrome Extension App</span>
                                         </p>
@@ -171,15 +183,19 @@
                                 </figure>
                             </li>
                             <li value='4'>
-                                <figure class='project-list'>
-                                    <div id='img4' class='projectImg'></div>
+                                <figure class='project-list' value='mypage'>
+                                    <div class='wrap-projectImg'>
+                                        <div id='img4' class='projectImg scale'></div>
+                                        <div class='blackcover2'></div>
+                                    </div>
+
                                     <figcaption class='wrap-project-txt'>
-                                        <p class='proj-title'>개인 홈페이지
+                                        <p class='proj-title'>나의 홈페이지
                                             <br />
                                             <span>Website</span>
                                         </p>
                                         <div class='proj-con'>
-                                            <p>개인 포트폴리오 정리, 공부 기록을 위한 홈페이지 제작</p>
+                                            <p>개인 포트폴리오 정리, 공부 기록을 위한 반응형 홈페이지 제작</p>
                                             <br />
                                             <p>&nbsp;</p>
                                             <br />
@@ -196,8 +212,11 @@
                                 </figure>
                             </li>
                             <li value='5'>
-                                <figure class='project-list'>
-                                    <div id='img5' class='projectImg'></div>
+                                <figure class='project-list' value='ready'>
+                                    <div class='wrap-projectImg'>
+                                        <div id='img5' class='projectImg scale'></div>
+                                        <div class='blackcover2'></div>
+                                    </div>
                                     <figcaption class='wrap-project-txt'>
                                         <p class='proj-title'>GOOGLE DRIVE EXTENTION
                                             <br />
@@ -238,14 +257,43 @@
                             $('.project-slider').css('left', -item_width + 'px');
                         });
                     });
+                    
 
-                    //Next Button
-                    $('.nextBtn').click(function () {
+                    //다음으로 넘기는 함수
+                    function nextList(){
                         var left_indent = parseInt($('.project-slider').css('left')) - item_width; //
-                        $('.project-slider').animate({ 'left': left_indent + 'px' }, 300, function () {
+                        $('.project-slider').animate({ 'left': left_indent + 'px' }, 600, function () {
                             $('.project-slider li:last').after($('.project-slider li:first'));
                             $('.project-slider').css('left', -item_width + 'px');
                         });
+                    }
+                    //다음버튼 클릭시
+                    $('.nextBtn').click(nextList);
+                    //자동으로 넘김
+                    var idInterval = setInterval(nextList,4000);
+                    //이영역안에 들어가면 인터벌 멈춤
+                    $('.wrap-title').hover(
+                        function(){clearInterval(idInterval)},
+                        function(){idInterval = setInterval(nextList,4000)});
+                    //리스트 페이지 이동
+                    $('.moreBtn').click(function(){showThis($(this).attr('value'))})
+                    //이미지 효과
+                    $('.project-list').hover(
+                        function () { 
+                            $(this).find('.scale').addClass('hover')
+                        },
+                        function() {
+                            $(this).find('.scale').removeClass('hover')
+                        }
+                    );
+
+                    $('.project-list').click(function(){
+                        var target=$(this).attr('value');
+                        if(target=='ready'){
+                            alert('공부하는 중입니다. 곧 완성되면 만나요!');
+                            return;
+                        }
+                        showThis(target);
                     });
 
                 </script>
@@ -253,6 +301,7 @@
 
             </div>
         </section>
+        <a id='contact'></a>
         <section id='section3'>
             <div class='wrap-title'>
                 <p class='title'>CONTACT</p>

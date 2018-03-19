@@ -51,15 +51,10 @@ table {
 .jejugothic{font-family: 'Jeju Gothic', sans-serif;}
 .permanent-marker{font-family: 'Permanent Marker', cursive;}
 
-.grayscale {
-	filter:url(grayscale.svg); /* Firefox 4+*/ 
-	filter:gray;/*IE 6-9*/
-	-webkit-filter:grayscale(100%);	
-	-moz-filter:grayscale(100%);	
-	-ms-filter:grayscale(100%);	
-	-o-filter:grayscale(100%);	
-	filter:grayscale(100%);	
-  }
+a:link {text-decoration: none; color: #333;}
+a:visited {text-decoration: none; color: #333;}
+a:active {text-decoration: none; color: #333;}
+a:hover {text-decoration: none; color: #333;}
 
 .tx_l{text-align:left;}
 .tx_c{text-align:center;}
@@ -74,6 +69,8 @@ table {
 
 .in_bl {display:inline-block}
 .over_h {overflow:hidden;}
+
+.t-h2{line-height: 2em;}
 
 .wth_100 {width:100%;}
 .wth_90 {width:90%;}

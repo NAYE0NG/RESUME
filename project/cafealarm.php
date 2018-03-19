@@ -13,10 +13,10 @@
 <body>
     <nav class='mv-scroll'>
         <div id='wrap-menu' class='mv-scroll'>
-            <p>HOME</p>
-            <p>ABOUT</p>
-            <p>PROJECT</p>
-            <p>CONTACT</p>
+            <a href='../index.html#about'><p>ABOUT</p></a>
+            <a href='../index.html#project'><p>PROJECT</p></a>
+            <a href='./projectlist.php'><p>ALL</p></a>
+            <a href='../index.html#contact'><p>CONTACT</p></a>
         </div>
     </nav>
     <section id='wrap-explain'>
@@ -24,11 +24,11 @@
             <div id='proj-route'>
                 <p class='in_bl f_l'>PROJECT &nbsp;&nbsp;>&nbsp;&nbsp; PROJECT LIST &nbsp;&nbsp;>&nbsp;&nbsp;</p>
                 <!--여기에 PHP 변수 넣을거임-->
-                <P class='in_bl f_l'>NAVER CAFE ALARM</P>
+                <P class='in_bl f_l'>네이버 카페 새소식 알람</P>
             </div>
             <div id='proj-summary'>
-                <p>NAVER CAFE ALARM</p>
-                <p>Chrome Extension App</p>
+                <p>네이버 카페 새소식 알람</p>
+                <p class='t-h2'>Chrome Extension App</p>
                 <table>
                     <tr>
                         <td class='summarytxt'>&middot; 기&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;간 </td>
@@ -73,7 +73,7 @@
             </div>
             <div id='proj-images'>
                 <P>실행화면</P>
-                <img src='../img/weatherinfo.JPG' />
+                <img src='../img/navercafe.JPG' class='h400' />
             </div>
 
             <div id='links'>
@@ -85,17 +85,9 @@
                     <li>- 확장 프로그램 설치 : 제공불가</li>
                 </ul>
             </div>
-            <!--div id='reference'>
-                <P>참고사이트</P>
-                <ul><li>- 생활코딩 : https://opentutorials.org/course/2473/14086</li></ul>
-            </div>
-            <div id='addexplain'>
-                    <P>특이사항</P>
-                    <p>2017 네이버 동계 해커톤 - 우수참가자 선정 <p>
-            </div-->
         </article>
     </section>
-    <footer>여긴 아래ㅇㅇㅇ</footer>
+    <footer></footer>
 </body>
 
 </html>

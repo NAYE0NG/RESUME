@@ -13,10 +13,10 @@
 <body>
     <nav class='mv-scroll'>
         <div id='wrap-menu' class='mv-scroll'>
-            <p>HOME</p>
-            <p>ABOUT</p>
-            <p>PROJECT</p>
-            <p>CONTACT</p>
+            <a href='../index.html#about'><p>ABOUT</p></a>
+            <a href='../index.html#project'><p>PROJECT</p></a>
+            <a href='./projectlist.php'><p>ALL</p></a>
+            <a href='../index.html#contact'><p>CONTACT</p></a>
         </div>
     </nav>
     <section id='wrap-explain'>
@@ -24,11 +24,11 @@
             <div id='proj-route'>
                 <p class='in_bl f_l'>PROJECT &nbsp;&nbsp;>&nbsp;&nbsp; PROJECT LIST &nbsp;&nbsp;>&nbsp;&nbsp;</p>
                 <!--여기에 PHP 변수 넣을거임-->
-                <P class='in_bl f_l'>WETHER INFOMATION</P>
+                <P class='in_bl f_l'>내 위치 실시간 날씨 알림</P>
             </div>
             <div id='proj-summary'>
-                <p>WETHER INFOMATION</p>
-                <p>Chrome Extension App</p>
+                <p>내 위치 실시간 날씨 알림</p>
+                <p class='t-h2'>Chrome Extension App</p>
                 <table>
                     <tr>
                         <td class='summarytxt'>&middot; 기&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;간 </td>
@@ -73,7 +73,7 @@
             </div>
             <div id='proj-images'>
                 <P>실행화면</P>
-                <img src='../img/weatherinfo.JPG' />
+                <img src='../img/weatherinfo.JPG' class='h400'/>
             </div>
 
             <div id='links'>
@@ -92,7 +92,7 @@
             <div id='addexplain'></div>
         </article>
     </section>
-    <footer>여긴 아래ㅇㅇㅇ</footer>
+    <footer></footer>
 </body>
 
 </html>
